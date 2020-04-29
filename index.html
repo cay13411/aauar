@@ -31,6 +31,7 @@
       <!-- Credit to Poly by Google for the model: https://poly.google.com/view/dA5osnS0Rzj -->
       <a-asset-item id="jelly-glb" src="jellyfish-model.glb"></a-asset-item>
       <a-asset-item id="cat-gltf" src="cat.gltf"></a-asset-item>
+      <a-asset-item id="pac-man-gltf" src="pac-man-gltf"></a-asset-item>
       <img id="jelly-thumb" src="targets/video-target.jpg">
       <video
         id="jelly-video"
@@ -62,9 +63,11 @@
     <!-- Note: "name:" must be set to the name of the image target uploaded to the 8th Wall Console -->
     <a-entity xrextras-named-image-target="name: model-target">
       <a-entity xrextras-named-image-target="name: cat"></a-entity>
+      <a-entity xrextras-named-image-target="name: pac-man-flyer"></a-entity>
       <!-- Add a child entity that can be rotated independently of the image target. -->
       <a-entity xrextras-one-finger-rotate gltf-model="#jelly-glb"></a-entity>
       <a-entity xrextras-one-finger-rotate gltf-model="#cat-gltf"scale="10 10 10">
+      <a-entity xrextras-one-finger-rotate gltf-model="#pac-man-gltf"scale="10 10 10">
     </a-entity>
 
   </a-scene>
